@@ -8,8 +8,8 @@ import { AppareilService } from '../services/appareil.service';
 })
 export class AppareilComponent implements OnInit {
 
-  @Input() appareilName: string | undefined;
-  @Input() appareilStatus: string | undefined;
+  @Input() appareilName!: string;
+  @Input() appareilStatus!: string;
   @Input() index!: number;
   @Input() id!: number;
   
